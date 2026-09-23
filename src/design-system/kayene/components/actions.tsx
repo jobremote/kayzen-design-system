@@ -1,5 +1,5 @@
 import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from "react";
-import { LoaderCircle } from "lucide-react";
+import { SpinnerGapIcon } from "@phosphor-icons/react";
 import { cn } from "../lib/utils";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -13,7 +13,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button({ className, variant = "primary", size = "md", loading = false, leadingIcon, trailingIcon, children, disabled, ...props }, ref) {
   const variants = { primary: "bg-primary text-primary-foreground hover:bg-primary-hover active:bg-primary-active", secondary: "border border-primary bg-transparent text-primary hover:bg-primary-soft active:bg-primary-soft", tertiary: "bg-transparent text-primary hover:bg-primary-soft active:bg-primary-soft" };
   const sizes = { sm: "h-9 px-4 text-xs", md: "h-11 px-5 text-base", lg: "h-14 px-7 text-xl" };
-  return <button ref={ref} disabled={disabled || loading} className={cn("inline-flex items-center justify-center gap-2 rounded-pill font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:cursor-not-allowed disabled:opacity-45", variants[variant], sizes[size], className)} {...props}>{loading ? <LoaderCircle aria-hidden="true" className="size-4 animate-spin" /> : leadingIcon}{children}{!loading && trailingIcon}</button>;
+  return <button ref={ref} disabled={disabled || loading} className={cn("inline-flex items-center justify-center gap-2 rounded-pill font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:cursor-not-allowed disabled:opacity-45", variants[variant], sizes[size], className)} {...props}>{loading ? <SpinnerGapIcon aria-hidden="true" className="size-4 animate-spin" /> : leadingIcon}{children}{!loading && trailingIcon}</button>;
 });
 
 export interface CTAProps extends Omit<ButtonProps, "variant"> {}

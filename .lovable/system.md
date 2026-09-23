@@ -11,7 +11,7 @@ Build calm, welcoming wellness experiences with a precise token hierarchy: primi
 - Use the nearest existing typography and spacing token. Do not invent a new size to imitate an outside reference.
 - Small interactive elements use the pill radius; inputs use control, cards use card, and broad surfaces use surface.
 - Keep neumorphic elevation on neutral surfaces. Do not place gray elevation shadows directly over saturated brand backgrounds.
-- Use `lucide-react` regular stroke icons or the component's icon slots. Never draw replacement icons by hand.
+- Use `@phosphor-icons/react` icons with the regular weight or the component's icon slots. Prefer current `Icon`-suffixed exports and never draw replacement icons by hand.
 - Preserve the official bicolor mark. Do not recolor, flatten, redraw, or regenerate it.
 - Use semantic HTML, keyboard-reachable controls, visible focus rings, meaningful labels, and sufficient contrast.
 
