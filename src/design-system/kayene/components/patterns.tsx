@@ -1,0 +1,37 @@
+import { forwardRef, type HTMLAttributes, type ReactNode } from "react";
+import { ArrowLeft, CalendarDays, Check, ChevronRight, Home, Info, TriangleAlert, X } from "lucide-react";
+import { cn } from "../lib/utils";
+import { Button, CTA } from "./actions";
+
+export interface ServiceListItemProps extends HTMLAttributes<HTMLDivElement> { title: string; subtitle: string; visual?: ReactNode; }
+export const ServiceListItem = forwardRef<HTMLDivElement, ServiceListItemProps>(function ServiceListItem({ className, title, subtitle, visual, ...props }, ref) { return <div ref={ref} className={cn("flex items-center gap-4 rounded-card bg-surface p-4 shadow-raised", className)} {...props}><div className="grid size-12 shrink-0 place-items-center rounded-control bg-secondary-soft text-secondary">{visual ?? <CalendarDays className="size-5"/>}</div><div className="min-w-0 flex-1"><p className="font-semibold">{title}</p><p className="truncate text-sm text-content-muted">{subtitle}</p></div><ChevronRight aria-hidden="true" className="size-5 text-content-muted"/></div>; });
+
+export interface ProfessionalCardProps extends ServiceListItemProps { image?: ReactNode; }
+export const ProfessionalCard = forwardRef<HTMLDivElement, ProfessionalCardProps>(function ProfessionalCard({ image, ...props }, ref) { return <ServiceListItem ref={ref} visual={image ?? <span className="font-display text-lg">KS</span>} {...props}/>; });
+
+export interface TimeSlotChipProps extends HTMLAttributes<HTMLSpanElement> { state?: "available" | "selected" | "unavailable"; }
+export function TimeSlotChip({ className, state = "available", children, ...props }: TimeSlotChipProps) { const styles = { available: "border-primary text-primary", selected: "border-primary bg-primary text-primary-foreground", unavailable: "border-border text-content-muted line-through opacity-50" }; return <span className={cn("inline-flex min-h-10 items-center rounded-pill border px-4 text-sm font-medium", styles[state], className)} {...props}>{children}</span>; }
+
+export interface CalendarDayCellProps extends HTMLAttributes<HTMLSpanElement> { state?: "default" | "today" | "selected" | "disabled"; }
+export function CalendarDayCell({ className, state = "default", children, ...props }: CalendarDayCellProps) { const styles = { default: "hover:bg-primary-soft", today: "border-2 border-primary-border", selected: "bg-primary text-primary-foreground", disabled: "opacity-35" }; return <span className={cn("grid size-10 place-items-center rounded-pill text-sm", styles[state], className)} {...props}>{children}</span>; }
+
+export interface CalendarProps extends HTMLAttributes<HTMLDivElement> { month?: string; }
+export function Calendar({ className, month = "Setembro 2026", ...props }: CalendarProps) { return <div className={cn("w-full max-w-sm rounded-card bg-surface p-5 shadow-raised", className)} {...props}><div className="mb-5 flex items-center justify-between"><strong>{month}</strong><CalendarDays className="size-5 text-primary"/></div><div className="grid grid-cols-7 gap-1 text-center text-label-sm text-content-muted">{"DSTQQSS".split("").map((day, i) => <span key={`${day}-${i}`}>{day}</span>)}{Array.from({length: 30}, (_, i) => <CalendarDayCell key={i} state={i === 22 ? "today" : i === 24 ? "selected" : "default"}>{i + 1}</CalendarDayCell>)}</div></div>; }
+
+export interface BannerProps extends HTMLAttributes<HTMLDivElement> { status?: "success" | "info" | "error" | "alert" | "neutral"; title: string; dismissible?: boolean; onDismiss?: () => void; }
+export function Banner({ className, status = "info", title, children, dismissible, onDismiss, ...props }: BannerProps) { const styles = { success: "bg-success-soft text-success", info: "bg-info-soft text-info", error: "bg-error-soft text-error", alert: "bg-alert-soft text-alert", neutral: "bg-[var(--kayene-stone-100)] text-[var(--kayene-stone-950)]" }; const Icon = status === "success" ? Check : status === "alert" || status === "error" ? TriangleAlert : Info; return <div role="status" className={cn("flex items-start gap-3 rounded-control p-4", styles[status], className)} {...props}><Icon className="mt-0.5 size-5 shrink-0"/><div className="flex-1"><strong className="block">{title}</strong>{children && <div className="mt-1 text-sm opacity-80">{children}</div>}</div>{dismissible && <button type="button" aria-label="Fechar aviso" onClick={onDismiss} className="rounded-pill p-1 focus-visible:outline-2 focus-visible:outline-ring"><X className="size-4"/></button>}</div>; }
+
+export interface SkeletonProps extends HTMLAttributes<HTMLDivElement> { variant?: "heading" | "line" | "rectangle" | "square"; }
+export function Skeleton({ className, variant = "line", ...props }: SkeletonProps) { const sizes = { heading: "h-8 w-2/3", line: "h-4 w-full", rectangle: "h-28 w-full", square: "size-20" }; return <div aria-hidden="true" className={cn("animate-pulse rounded-control bg-[var(--kayene-stone-100)]", sizes[variant], className)} {...props}/>; }
+
+export interface ModalProps extends HTMLAttributes<HTMLDivElement> { title: string; open?: boolean; onClose?: () => void; }
+export function Modal({ className, title, open = true, onClose, children, ...props }: ModalProps) { if (!open) return null; return <div role="dialog" aria-modal="true" aria-labelledby="kayene-modal-title" className={cn("rounded-surface bg-surface p-8 shadow-raised", className)} {...props}><div className="mb-5 flex items-start justify-between gap-4"><h2 id="kayene-modal-title" className="text-title-sm">{title}</h2><Button variant="tertiary" size="sm" aria-label="Fechar" onClick={onClose}><X className="size-4"/></Button></div><div className="text-content-muted">{children}</div><div className="mt-7 flex justify-end gap-3"><Button variant="tertiary" onClick={onClose}>Agora não</Button><CTA>Confirmar</CTA></div></div>; }
+
+export interface AppHeaderProps extends HTMLAttributes<HTMLElement> { variant?: "back" | "home"; title?: string; eyebrow?: string; }
+export function AppHeader({ className, variant = "home", title = "Olá, Kayene", eyebrow = "Seu cuidado, no seu tempo", ...props }: AppHeaderProps) { return <header className={cn("flex min-h-20 items-center gap-3 border-b border-border px-5", className)} {...props}>{variant === "back" ? <><Button variant="tertiary" size="sm" aria-label="Voltar"><ArrowLeft className="size-5"/></Button><strong className="text-tertiary">{title}</strong></> : <><Home className="size-5 text-secondary"/><div><span className="block text-xs text-secondary">{eyebrow}</span><strong>{title}</strong></div></>}</header>; }
+
+export interface TabItemProps extends HTMLAttributes<HTMLDivElement> { active?: boolean; icon: ReactNode; label: string; }
+export function TabItem({ className, active, icon, label, ...props }: TabItemProps) { return <div className={cn("flex min-w-16 flex-col items-center gap-1 rounded-pill px-3 py-2 text-xs text-content-muted", active && "bg-primary-soft text-primary shadow-raised", className)} {...props}>{icon}<span>{label}</span></div>; }
+
+export interface BottomNavBarProps extends HTMLAttributes<HTMLElement> {}
+export function BottomNavBar({ className, children, ...props }: BottomNavBarProps) { return <nav aria-label="Navegação principal" className={cn("flex items-center justify-around rounded-pill bg-surface p-2 shadow-raised", className)} {...props}>{children}</nav>; }
