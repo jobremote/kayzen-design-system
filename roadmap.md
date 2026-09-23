@@ -5,4 +5,4 @@
 - [x] Build and export documented starter components
 - [x] Add attach metadata and authoring guidance
 - [x] Build multi-page showcase with theme and search
-- [ ] Verify desktop and mobile previews
+- [x] Verify desktop and mobile previews
