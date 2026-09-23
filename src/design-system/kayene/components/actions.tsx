@@ -18,7 +18,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
 
 export interface CTAProps extends Omit<ButtonProps, "variant"> {}
 export const CTA = forwardRef<HTMLButtonElement, CTAProps>(function CTA({ className, ...props }, ref) {
-  return <Button ref={ref} className={cn("bg-linear-to-b from-[var(--kayene-cornflower-500)] to-[var(--kayene-cornflower-950)] text-white hover:brightness-110 active:brightness-125", className)} {...props} />;
+  return <Button ref={ref} className={cn("bg-linear-to-b from-primary to-primary-active text-white hover:brightness-110 active:brightness-125", className)} {...props} />;
 });
 
 export interface BadgeProps { children: ReactNode; status?: "success" | "info" | "error" | "alert" | "neutral"; variant?: "filled" | "outline"; className?: string; }
