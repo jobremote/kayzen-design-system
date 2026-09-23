@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { TypographyPage } from "@/showcase/pages";
+export const Route = createFileRoute("/typography")({ head:()=>({meta:[{title:"Tipografia — Kayene Design System"},{name:"description",content:"Escala tipográfica Kayene em Lora e Albert Sans."},{property:"og:title",content:"Tipografia — Kayene Design System"},{property:"og:description",content:"Escala tipográfica Kayene em Lora e Albert Sans."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component: TypographyPage });

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ColorsPage } from "@/showcase/pages";
+export const Route = createFileRoute("/colors")({ head:()=>({meta:[{title:"Cores — Kayene Design System"},{name:"description",content:"Paleta primitiva e tokens semânticos Kayene."},{property:"og:title",content:"Cores — Kayene Design System"},{property:"og:description",content:"Paleta primitiva e tokens semânticos Kayene."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component: ColorsPage });
