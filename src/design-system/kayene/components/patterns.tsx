@@ -2,6 +2,7 @@ import { forwardRef, type HTMLAttributes, type ReactNode } from "react";
 import { ArrowLeft, CalendarDays, Check, ChevronRight, Home, Info, TriangleAlert, X } from "lucide-react";
 import { cn } from "../lib/utils";
 import { Button, CTA } from "./actions";
+import { EmailInput, PasswordInput } from "./forms";
 
 export interface ServiceListItemProps extends HTMLAttributes<HTMLDivElement> { title: string; subtitle: string; visual?: ReactNode; }
 export const ServiceListItem = forwardRef<HTMLDivElement, ServiceListItemProps>(function ServiceListItem({ className, title, subtitle, visual, ...props }, ref) { return <div ref={ref} className={cn("flex items-center gap-4 rounded-card bg-surface p-4 shadow-raised", className)} {...props}><div className="grid size-12 shrink-0 place-items-center rounded-control bg-secondary-soft text-secondary">{visual ?? <CalendarDays className="size-5"/>}</div><div className="min-w-0 flex-1"><p className="font-semibold">{title}</p><p className="truncate text-sm text-content-muted">{subtitle}</p></div><ChevronRight aria-hidden="true" className="size-5 text-content-muted"/></div>; });
@@ -35,3 +36,6 @@ export function TabItem({ className, active, icon, label, ...props }: TabItemPro
 
 export interface BottomNavBarProps extends HTMLAttributes<HTMLElement> {}
 export function BottomNavBar({ className, children, ...props }: BottomNavBarProps) { return <nav aria-label="Navegação principal" className={cn("flex items-center justify-around rounded-pill bg-surface p-2 shadow-raised", className)} {...props}>{children}</nav>; }
+
+export interface LoginTemplateProps extends HTMLAttributes<HTMLDivElement> { onSubmit?: () => void; }
+export function LoginTemplate({ className, onSubmit, ...props }: LoginTemplateProps) { return <div className={cn("overflow-hidden rounded-surface bg-surface shadow-raised", className)} {...props}><div className="bg-primary px-6 py-8 text-primary-foreground"><span className="text-sm opacity-80">Bem-vinda de volta</span><h2 className="mt-2 font-display text-3xl">Seu cuidado começa aqui.</h2></div><form className="grid gap-4 p-6" onSubmit={(event) => { event.preventDefault(); onSubmit?.(); }}><EmailInput label="E-mail" placeholder="voce@exemplo.com"/><PasswordInput label="Senha" placeholder="Sua senha"/><CTA type="submit" className="w-full">Entrar</CTA><Button type="button" variant="secondary" className="w-full">Continuar com Google</Button></form></div>; }
