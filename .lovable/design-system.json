@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "name": "Kayene Design System",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "source_type": "local",
+    "theme_files": [
+      "src/design-system/kayene/styles/theme.css"
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "file": "src/design-system/kayene/components/actions.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Button for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Button } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "CTA",
+      "file": "src/design-system/kayene/components/actions.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use CTA for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { CTA } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Badge",
+      "file": "src/design-system/kayene/components/actions.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Badge for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Badge } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "TextInput",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use TextInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { TextInput } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "EmailInput",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use EmailInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { EmailInput } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "PasswordInput",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use PasswordInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { PasswordInput } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "SearchInput",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use SearchInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { SearchInput } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "DateInput",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use DateInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { DateInput } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Textarea",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Textarea for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Textarea } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "RadioButton",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use RadioButton for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { RadioButton } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "FormGroup",
+      "file": "src/design-system/kayene/components/forms.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use FormGroup for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { FormGroup } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "ServiceListItem",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use ServiceListItem for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { ServiceListItem } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "ProfessionalCard",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use ProfessionalCard for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { ProfessionalCard } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "TimeSlotChip",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use TimeSlotChip for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { TimeSlotChip } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "CalendarDayCell",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use CalendarDayCell for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { CalendarDayCell } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Calendar",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Calendar for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Calendar } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Banner",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Banner for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Banner } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Skeleton for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Skeleton } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "Modal",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use Modal for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { Modal } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "AppHeader",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use AppHeader for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { AppHeader } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "TabItem",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use TabItem for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { TabItem } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "BottomNavBar",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use BottomNavBar for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { BottomNavBar } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "LoginTemplate",
+      "file": "src/design-system/kayene/components/patterns.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use LoginTemplate for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { LoginTemplate } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "KayeneMark",
+      "file": "src/design-system/kayene/components/brand.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use KayeneMark for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { KayeneMark } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    },
+    {
+      "name": "KayeneLogo",
+      "file": "src/design-system/kayene/components/brand.tsx",
+      "import_path": "@/design-system/kayene",
+      "usage": "Use KayeneLogo for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
+      "examples": [
+        {
+          "label": "Basic usage",
+          "code": "import { KayeneLogo } from \"@/design-system/kayene\";"
+        }
+      ],
+      "antipatterns": [
+        "Do not restyle with raw color or spacing values.",
+        "Do not replace semantic structure with clickable div elements."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use semantic tokens instead of raw values.",
+    "Use Lotus, never generic red, for error feedback.",
+    "Preserve official bicolor brand artwork."
+  ],
+  "patterns": [
+    "Primitives feed semantic aliases; components consume semantic aliases.",
+    "Use pill radii for compact interactive controls."
+  ]
+}

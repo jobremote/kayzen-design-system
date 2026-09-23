@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ComponentsPage } from "@/showcase/pages";
+export const Route = createFileRoute("/components")({ head:()=>({meta:[{title:"Componentes — Kayene Design System"},{name:"description",content:"Galeria interativa dos componentes Kayene."},{property:"og:title",content:"Componentes — Kayene Design System"},{property:"og:description",content:"Galeria interativa dos componentes Kayene."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component: ComponentsPage });

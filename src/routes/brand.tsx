@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { BrandPage } from "@/showcase/pages";
+export const Route = createFileRoute("/brand")({ head:()=>({meta:[{title:"Marca — Kayene Design System"},{name:"description",content:"Símbolo e assinatura oficial Kayene Santiago."},{property:"og:title",content:"Marca — Kayene Design System"},{property:"og:description",content:"Símbolo e assinatura oficial Kayene Santiago."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component: BrandPage });

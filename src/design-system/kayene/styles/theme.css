@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --kayene-sunflower-25: #f8f7f1; --kayene-sunflower-50: #ede8d9; --kayene-sunflower-100: #e2dac1; --kayene-sunflower-200: #d6cba8; --kayene-sunflower-300: #cbbd90; --kayene-sunflower-400: #bfae77; --kayene-sunflower-500: #b4a05f; --kayene-sunflower-600: #a79149; --kayene-sunflower-700: #907c3c; --kayene-sunflower-800: #776632; --kayene-sunflower-900: #5e5126; --kayene-sunflower-950: #453b1c; --kayene-sunflower-1000: #2b2512;
+  --kayene-iris-25: #e1e5ef; --kayene-iris-50: #cad1e3; --kayene-iris-100: #b2bdd6; --kayene-iris-200: #9ba9ca; --kayene-iris-300: #8495bd; --kayene-iris-400: #6d81b1; --kayene-iris-500: #576da3; --kayene-iris-600: #4a5e8c; --kayene-iris-700: #3e4e75; --kayene-iris-800: #323f5e; --kayene-iris-900: #232e48; --kayene-iris-950: #171e31; --kayene-iris-1000: #0f131f;
+  --kayene-leaf-25: #e0ebea; --kayene-leaf-50: #cadddb; --kayene-leaf-100: #b6cecb; --kayene-leaf-200: #a0c0bc; --kayene-leaf-300: #8bb1ad; --kayene-leaf-400: #79a09c; --kayene-leaf-500: #658f8b; --kayene-leaf-600: #577b77; --kayene-leaf-700: #486662; --kayene-leaf-800: #39514e; --kayene-leaf-900: #283e3c; --kayene-leaf-950: #1a2927; --kayene-leaf-1000: #0c1312;
+  --kayene-cornflower-25: #d7e6f4; --kayene-cornflower-50: #bdd5ea; --kayene-cornflower-100: #a1c3e2; --kayene-cornflower-200: #85b1d9; --kayene-cornflower-300: #6ba1d1; --kayene-cornflower-400: #4f8fc9; --kayene-cornflower-500: #3a7dbb; --kayene-cornflower-600: #2d6ba4; --kayene-cornflower-700: #255988; --kayene-cornflower-800: #1e476c; --kayene-cornflower-900: #163450; --kayene-cornflower-950: #0e2234; --kayene-cornflower-1000: #081521;
+  --kayene-lotus-25: #f6eff4; --kayene-lotus-50: #e9d8e4; --kayene-lotus-100: #dcc1d4; --kayene-lotus-200: #cbaec3; --kayene-lotus-300: #be98b2; --kayene-lotus-400: #b082a2; --kayene-lotus-500: #a26d92; --kayene-lotus-600: #8f5b80; --kayene-lotus-700: #7a4d6c; --kayene-lotus-800: #644059; --kayene-lotus-900: #512f47; --kayene-lotus-950: #3a2233; --kayene-lotus-1000: #24141f;
+  --kayene-stone-25: #f2f2f2; --kayene-stone-50: #e0e0e0; --kayene-stone-100: #cfcfcf; --kayene-stone-200: #bdbdbd; --kayene-stone-300: #ababab; --kayene-stone-400: #999999; --kayene-stone-500: #878787; --kayene-stone-600: #757575; --kayene-stone-700: #636363; --kayene-stone-800: #525252; --kayene-stone-900: #404040; --kayene-stone-950: #2e2e2e; --kayene-stone-1000: #1c1c1c;
+
+  --kayene-bg: var(--kayene-stone-25); --kayene-surface: #ffffff; --kayene-content: var(--kayene-stone-1000); --kayene-content-muted: var(--kayene-stone-700);
+  --kayene-primary: var(--kayene-cornflower-700); --kayene-primary-hover: var(--kayene-cornflower-800); --kayene-primary-active: var(--kayene-cornflower-900); --kayene-primary-soft: var(--kayene-cornflower-25); --kayene-primary-border: var(--kayene-cornflower-200); --kayene-primary-foreground: var(--kayene-cornflower-25);
+  --kayene-secondary: var(--kayene-leaf-700); --kayene-secondary-hover: var(--kayene-leaf-800); --kayene-secondary-soft: var(--kayene-leaf-25); --kayene-tertiary: var(--kayene-iris-800); --kayene-accent: var(--kayene-sunflower-400); --kayene-expressive: var(--kayene-lotus-500);
+  --kayene-border: var(--kayene-stone-200); --kayene-ring: var(--kayene-cornflower-200); --kayene-error: var(--kayene-lotus-950); --kayene-error-soft: var(--kayene-lotus-100); --kayene-error-stroke: var(--kayene-lotus-200); --kayene-success: var(--kayene-leaf-950); --kayene-success-soft: var(--kayene-leaf-100); --kayene-info: var(--kayene-iris-950); --kayene-info-soft: var(--kayene-iris-100); --kayene-alert: var(--kayene-sunflower-950); --kayene-alert-soft: var(--kayene-sunflower-100);
+  --kayene-radius-control: 8px; --kayene-radius-card: 16px; --kayene-radius-surface: 24px; --kayene-radius-pill: 999px;
+  --kayene-shadow-raised: -10px 0 10px rgb(255 255 255 / 12%), 10px 0 10px rgb(0 0 0 / 2%), 0 -10px 10px rgb(255 255 255 / 12%), 0 10px 10px rgb(0 0 0 / 2%);
+  --kayene-shadow-inset: inset 6px 6px 6px rgb(0 0 0 / 4%), inset -6px -6px 6px rgb(255 255 255 / 40%);
+}
+
+.dark {
+  --kayene-bg: var(--kayene-stone-1000); --kayene-surface: var(--kayene-stone-950); --kayene-content: var(--kayene-stone-25); --kayene-content-muted: var(--kayene-stone-300); --kayene-border: var(--kayene-stone-700);
+  --kayene-shadow-raised: -10px 0 10px rgb(255 255 255 / 2%), 10px 0 10px rgb(0 0 0 / 5%), 0 -10px 10px rgb(255 255 255 / 2%), 0 10px 10px rgb(0 0 0 / 5%);
+  --kayene-shadow-inset: inset 6px 6px 6px rgb(0 0 0 / 14%), inset -6px -6px 6px rgb(255 255 255 / 2%);
+}
+
+@theme inline {
+  --font-display: "Lora", serif; --font-sans: "Albert Sans", sans-serif;
+  --color-background: var(--kayene-bg); --color-surface: var(--kayene-surface); --color-content: var(--kayene-content); --color-content-muted: var(--kayene-content-muted);
+  --color-primary: var(--kayene-primary); --color-primary-hover: var(--kayene-primary-hover); --color-primary-active: var(--kayene-primary-active); --color-primary-soft: var(--kayene-primary-soft); --color-primary-border: var(--kayene-primary-border); --color-primary-foreground: var(--kayene-primary-foreground);
+  --color-secondary: var(--kayene-secondary); --color-secondary-hover: var(--kayene-secondary-hover); --color-secondary-soft: var(--kayene-secondary-soft); --color-tertiary: var(--kayene-tertiary); --color-accent: var(--kayene-accent); --color-expressive: var(--kayene-expressive);
+  --color-border: var(--kayene-border); --color-ring: var(--kayene-ring); --color-error: var(--kayene-error); --color-error-soft: var(--kayene-error-soft); --color-error-stroke: var(--kayene-error-stroke); --color-success: var(--kayene-success); --color-success-soft: var(--kayene-success-soft); --color-info: var(--kayene-info); --color-info-soft: var(--kayene-info-soft); --color-alert: var(--kayene-alert); --color-alert-soft: var(--kayene-alert-soft);
+  --radius-control: var(--kayene-radius-control); --radius-card: var(--kayene-radius-card); --radius-surface: var(--kayene-radius-surface); --radius-pill: var(--kayene-radius-pill);
+  --shadow-raised: var(--kayene-shadow-raised); --shadow-inset: var(--kayene-shadow-inset);
+}
+
+@utility text-display { font-family: var(--font-display); font-size: 2.5rem; line-height: 3rem; font-weight: 500; letter-spacing: 0; }
+@utility text-title-lg { font-size: 2rem; line-height: 2.5rem; font-weight: 600; letter-spacing: 0; }
+@utility text-title-md { font-size: 1.75rem; line-height: 2.25rem; font-weight: 600; letter-spacing: 0; }
+@utility text-title-sm { font-size: 1.5rem; line-height: 2rem; font-weight: 600; letter-spacing: 0; }
+@utility text-paragraph-lg { font-size: 1.5rem; line-height: 2.25rem; font-weight: 400; letter-spacing: 0; }
+@utility text-paragraph-md { font-size: 1.25rem; line-height: 1.75rem; font-weight: 400; letter-spacing: 0; }
+@utility text-paragraph-sm { font-size: 1rem; line-height: 1.25rem; font-weight: 400; letter-spacing: 0; }
+@utility text-label-sm { font-size: .75rem; line-height: 1rem; font-weight: 500; letter-spacing: 0; }
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--kayene-bg); color: var(--kayene-content); font-family: "Albert Sans", sans-serif; }
