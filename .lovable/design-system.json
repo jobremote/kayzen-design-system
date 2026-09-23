@@ -414,9 +414,5 @@
     "Use semantic tokens instead of raw values.",
     "Use Lotus, never generic red, for error feedback.",
     "Preserve official bicolor brand artwork."
-  ],
-  "patterns": [
-    "Primitives feed semantic aliases; components consume semantic aliases.",
-    "Use pill radii for compact interactive controls."
   ]
 }
