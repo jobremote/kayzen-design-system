@@ -1,18 +1,547 @@
 {
   "meta": {
-    "name": "Kayene Design System",
+    "name": "Kayzen - Design System",
+    "package": "@ws-4vskzvxpuy4bqmrwusz5/75f7bc7c-4eea-492a-801f-9556d36219ff",
+    "version": "1.0.0",
     "framework": "react",
     "css_framework": "tailwind",
-    "source_type": "local",
+    "starter_template": "custom_design_system",
     "theme_files": [
       "src/design-system/kayene/styles/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "868c7d3e3f669a1e20380b0ed6ba46b28452eb4d2df9a7351907101b42d8a536",
+      ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
+      ".gitignore": "6059213806e442947666752f3db6bfdc",
+      ".lovable/meta.yaml": "5a2373b91d18ce168dfa059d91d7bfbf",
+      ".lovable/plan/kayene-design-system-starter-2026-09-23.md": "171824c7158790d94499e9e59ea4d931",
+      ".lovable/plan/white-inputs-and-phosphor-icons-2026-09-23.md": "a86a56db2215a7a4032457924839b2af",
+      ".lovable/sources.yaml": "8dc700ea5f754229276f98485d000e79",
+      ".lovable/system.md": "7fba74313b8737e5f0edb0748d540db6",
+      "README.md": "d19675c449605f23c7cfa133c69b398b",
+      "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
+      "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
+      "lovable.toml": "9636c1bf32f9901bfba4eabb92981217",
+      "mockupPreviewPlugin.ts": "e98ee2ad1ab1cc12ed9c99eb4d6539cc",
+      "package.json": "0184aecced77dffe5aab4096748b1882",
+      "public/favicon.png": "236407963cab31afb28bfb7fa0436da0",
+      "roadmap.md": "171af4743bc1888b9e6e2c35076c6863",
+      "src/design-system/kayene/assets/icons/kayene-mark.png": "9012169fcb82b85b544c00dc68ce7390",
+      "src/design-system/kayene/assets/logos/kayene-lockup.png": "273f864e1ff7ef7cfc36ab72d66ab274",
+      "src/design-system/kayene/components/actions.tsx": "61328c397534868fda94137125619c16",
+      "src/design-system/kayene/components/brand.tsx": "bb592dea57efdb6a715d86ccc0b93254",
+      "src/design-system/kayene/components/forms.tsx": "09cb632fb746dd3aa380090b888e3cc4",
+      "src/design-system/kayene/components/patterns.tsx": "877bae031e47fb0f2e68cf746ae7591e",
+      "src/design-system/kayene/index.ts": "12e86c9608fd28ea277117765338c7f4",
+      "src/design-system/kayene/lib/utils.ts": "63b906b4aa7e456e374c7c7635d1bee0",
+      "src/design-system/kayene/styles/theme.css": "8caefb22b4a5353c279ec0f529e99be1",
+      "src/index.ts": "35ee2da7bca422d363fc0f9b21cea9dc",
+      "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
+      "src/routeTree.gen.ts": "73df2aca37b7ce6829e79837b0a0722a",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[__component].preview.$.tsx": "e4bf310e591541d31abf0cfeeb1121a4",
+      "src/routes/[__mockup].preview.$.tsx": "5d9f42470848aa60148f20f9580e240e",
+      "src/routes/__root.tsx": "bdcac4ac7705ee486f4b44f6110d9a74",
+      "src/routes/brand.tsx": "9b09848b33cd066dc15fda52cbd65cfc",
+      "src/routes/colors.tsx": "e319f6ffa745b4f8ee5211bd4d76e4f2",
+      "src/routes/components.tsx": "d66284fde4be251b646ee602c40bc56d",
+      "src/routes/index.tsx": "72a70928ab4448374da6661559574ae6",
+      "src/routes/typography.tsx": "6fd2a188bdc41fefcd5feef22caa330f",
+      "src/showcase/ShowcaseLayout.tsx": "f07e84c2669fb444bab87ae936e555b1",
+      "src/showcase/pages.tsx": "8a75c5fb6d124bc9ac6b30e742c45403",
+      "src/styles.css": "136d3942cdcdad0969f8e18ba6af1c34",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "4802c3af8ca2a659650324eb1671e690",
+      "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--kayene-sunflower-25",
+        "raw": "#f8f7f1",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-50",
+        "raw": "#ede8d9",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-100",
+        "raw": "#e2dac1",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-200",
+        "raw": "#d6cba8",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-300",
+        "raw": "#cbbd90",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-400",
+        "raw": "#bfae77",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-500",
+        "raw": "#b4a05f",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-600",
+        "raw": "#a79149",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-700",
+        "raw": "#907c3c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-800",
+        "raw": "#776632",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-900",
+        "raw": "#5e5126",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-950",
+        "raw": "#453b1c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-sunflower-1000",
+        "raw": "#2b2512",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-25",
+        "raw": "#e1e5ef",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-50",
+        "raw": "#cad1e3",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-100",
+        "raw": "#b2bdd6",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-200",
+        "raw": "#9ba9ca",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-300",
+        "raw": "#8495bd",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-400",
+        "raw": "#6d81b1",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-500",
+        "raw": "#576da3",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-600",
+        "raw": "#4a5e8c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-700",
+        "raw": "#3e4e75",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-800",
+        "raw": "#323f5e",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-900",
+        "raw": "#232e48",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-950",
+        "raw": "#171e31",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-iris-1000",
+        "raw": "#0f131f",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-25",
+        "raw": "#e0ebea",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-50",
+        "raw": "#cadddb",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-100",
+        "raw": "#b6cecb",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-200",
+        "raw": "#a0c0bc",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-300",
+        "raw": "#8bb1ad",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-400",
+        "raw": "#79a09c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-500",
+        "raw": "#658f8b",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-600",
+        "raw": "#577b77",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-700",
+        "raw": "#486662",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-800",
+        "raw": "#39514e",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-900",
+        "raw": "#283e3c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-950",
+        "raw": "#1a2927",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-leaf-1000",
+        "raw": "#0c1312",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-25",
+        "raw": "#d7e6f4",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-50",
+        "raw": "#bdd5ea",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-100",
+        "raw": "#a1c3e2",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-200",
+        "raw": "#85b1d9",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-300",
+        "raw": "#6ba1d1",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-400",
+        "raw": "#4f8fc9",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-500",
+        "raw": "#3a7dbb",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-600",
+        "raw": "#2d6ba4",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-700",
+        "raw": "#255988",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-800",
+        "raw": "#1e476c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-900",
+        "raw": "#163450",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-950",
+        "raw": "#0e2234",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-cornflower-1000",
+        "raw": "#081521",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-25",
+        "raw": "#f6eff4",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-50",
+        "raw": "#e9d8e4",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-100",
+        "raw": "#dcc1d4",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-200",
+        "raw": "#cbaec3",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-300",
+        "raw": "#be98b2",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-400",
+        "raw": "#b082a2",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-500",
+        "raw": "#a26d92",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-600",
+        "raw": "#8f5b80",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-700",
+        "raw": "#7a4d6c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-800",
+        "raw": "#644059",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-900",
+        "raw": "#512f47",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-950",
+        "raw": "#3a2233",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-lotus-1000",
+        "raw": "#24141f",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-25",
+        "raw": "#f2f2f2",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-50",
+        "raw": "#e0e0e0",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-100",
+        "raw": "#cfcfcf",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-200",
+        "raw": "#bdbdbd",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-300",
+        "raw": "#ababab",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-400",
+        "raw": "#999999",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-500",
+        "raw": "#878787",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-600",
+        "raw": "#757575",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-700",
+        "raw": "#636363",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-800",
+        "raw": "#525252",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-900",
+        "raw": "#404040",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-950",
+        "raw": "#2e2e2e",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-stone-1000",
+        "raw": "#1c1c1c",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-surface",
+        "raw": "#ffffff",
+        "source": "src/design-system/kayene/styles/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-display",
+        "raw": "\"Lora\", serif",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--font-sans",
+        "raw": "\"Albert Sans\", sans-serif",
+        "source": "src/design-system/kayene/styles/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--kayene-radius-control",
+        "raw": "8px",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-radius-card",
+        "raw": "16px",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-radius-surface",
+        "raw": "24px",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-radius-pill",
+        "raw": "999px",
+        "source": "src/design-system/kayene/styles/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--kayene-shadow-raised",
+        "raw": "-10px 0 10px rgb(255 255 255 / 12%), 10px 0 10px rgb(0 0 0 / 2%), 0 -10px 10px rgb(255 255 255 / 12%), 0 10px 10px rgb(0 0 0 / 2%)",
+        "source": "src/design-system/kayene/styles/theme.css"
+      },
+      {
+        "name": "--kayene-shadow-inset",
+        "raw": "inset 6px 6px 6px rgb(0 0 0 / 4%), inset -6px -6px 6px rgb(255 255 255 / 40%)",
+        "source": "src/design-system/kayene/styles/theme.css"
+      }
     ]
   },
   "components": [
     {
       "name": "Button",
       "file": "src/design-system/kayene/components/actions.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "tertiary"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "leadingIcon",
+          "type": "any"
+        },
+        {
+          "name": "trailingIcon",
+          "type": "any"
+        }
+      ],
       "usage": "Use Button for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -26,25 +555,42 @@
       ]
     },
     {
-      "name": "CTA",
-      "file": "src/design-system/kayene/components/actions.tsx",
-      "import_path": "@/design-system/kayene",
-      "usage": "Use CTA for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
-      "examples": [
-        {
-          "label": "Basic usage",
-          "code": "import { CTA } from \"@/design-system/kayene\";"
-        }
-      ],
-      "antipatterns": [
-        "Do not restyle with raw color or spacing values.",
-        "Do not replace semantic structure with clickable div elements."
-      ]
-    },
-    {
       "name": "Badge",
       "file": "src/design-system/kayene/components/actions.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "success",
+            "info",
+            "error",
+            "alert",
+            "neutral"
+          ],
+          "default": "neutral"
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "filled",
+            "outline"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "size-4 animate-spin"
+        }
+      ],
       "usage": "Use Badge for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -60,7 +606,23 @@
     {
       "name": "TextInput",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Buscar",
+          "required": true
+        },
+        {
+          "name": "error",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        }
+      ],
       "usage": "Use TextInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -76,7 +638,7 @@
     {
       "name": "EmailInput",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
       "usage": "Use EmailInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -92,7 +654,7 @@
     {
       "name": "PasswordInput",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
       "usage": "Use PasswordInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -108,7 +670,14 @@
     {
       "name": "SearchInput",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Buscar"
+        }
+      ],
       "usage": "Use SearchInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -124,7 +693,7 @@
     {
       "name": "DateInput",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
       "usage": "Use DateInput for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -140,7 +709,19 @@
     {
       "name": "Textarea",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Buscar",
+          "required": true
+        },
+        {
+          "name": "error",
+          "type": "string"
+        }
+      ],
       "usage": "Use Textarea for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -156,7 +737,15 @@
     {
       "name": "RadioButton",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Buscar",
+          "required": true
+        }
+      ],
       "usage": "Use RadioButton for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -172,7 +761,14 @@
     {
       "name": "FormGroup",
       "file": "src/design-system/kayene/components/forms.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "legend",
+          "type": "string",
+          "required": true
+        }
+      ],
       "usage": "Use FormGroup for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -188,7 +784,24 @@
     {
       "name": "ServiceListItem",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Olá, Kayene",
+          "required": true
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "visual",
+          "type": "any"
+        }
+      ],
       "usage": "Use ServiceListItem for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -204,7 +817,13 @@
     {
       "name": "ProfessionalCard",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "image",
+          "type": "any"
+        }
+      ],
       "usage": "Use ProfessionalCard for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -220,7 +839,19 @@
     {
       "name": "TimeSlotChip",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "state",
+          "type": "enum",
+          "values": [
+            "available",
+            "selected",
+            "unavailable"
+          ],
+          "default": "available"
+        }
+      ],
       "usage": "Use TimeSlotChip for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -236,7 +867,20 @@
     {
       "name": "CalendarDayCell",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "state",
+          "type": "enum",
+          "values": [
+            "default",
+            "today",
+            "selected",
+            "disabled"
+          ],
+          "default": "available"
+        }
+      ],
       "usage": "Use CalendarDayCell for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -252,7 +896,14 @@
     {
       "name": "Calendar",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "month",
+          "type": "string",
+          "default": "Setembro 2026"
+        }
+      ],
       "usage": "Use Calendar for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -268,7 +919,35 @@
     {
       "name": "Banner",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "success",
+            "info",
+            "error",
+            "alert",
+            "neutral"
+          ],
+          "default": "info"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Olá, Kayene",
+          "required": true
+        },
+        {
+          "name": "dismissible",
+          "type": "boolean"
+        },
+        {
+          "name": "onDismiss",
+          "type": "function"
+        }
+      ],
       "usage": "Use Banner for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -284,7 +963,20 @@
     {
       "name": "Skeleton",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "heading",
+            "line",
+            "rectangle",
+            "square"
+          ],
+          "default": "line"
+        }
+      ],
       "usage": "Use Skeleton for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -300,7 +992,24 @@
     {
       "name": "Modal",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Olá, Kayene",
+          "required": true
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "onClose",
+          "type": "function"
+        }
+      ],
       "usage": "Use Modal for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -316,7 +1025,28 @@
     {
       "name": "AppHeader",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "back",
+            "home"
+          ],
+          "default": "line"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Olá, Kayene"
+        },
+        {
+          "name": "eyebrow",
+          "type": "string",
+          "default": "Seu cuidado, no seu tempo"
+        }
+      ],
       "usage": "Use AppHeader for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -332,7 +1062,24 @@
     {
       "name": "TabItem",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
+          "name": "icon",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Fechar aviso",
+          "required": true
+        }
+      ],
       "usage": "Use TabItem for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -348,7 +1095,7 @@
     {
       "name": "BottomNavBar",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
       "usage": "Use BottomNavBar for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -364,7 +1111,13 @@
     {
       "name": "LoginTemplate",
       "file": "src/design-system/kayene/components/patterns.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "onSubmit",
+          "type": "function"
+        }
+      ],
       "usage": "Use LoginTemplate for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -380,7 +1133,19 @@
     {
       "name": "KayeneMark",
       "file": "src/design-system/kayene/components/brand.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        }
+      ],
       "usage": "Use KayeneMark for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
@@ -396,7 +1161,19 @@
     {
       "name": "KayeneLogo",
       "file": "src/design-system/kayene/components/brand.tsx",
-      "import_path": "@/design-system/kayene",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        }
+      ],
       "usage": "Use KayeneLogo for its documented Kayene interface pattern while preserving semantic tokens and accessible native behavior.",
       "examples": [
         {
