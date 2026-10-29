@@ -2,7 +2,7 @@
   "meta": {
     "name": "Kayzen - Design System",
     "package": "@ws-4vskzvxpuy4bqmrwusz5/75f7bc7c-4eea-492a-801f-9556d36219ff",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system",
@@ -14,7 +14,7 @@
       "#enrichment": "868c7d3e3f669a1e20380b0ed6ba46b28452eb4d2df9a7351907101b42d8a536",
       ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
       ".gitignore": "6059213806e442947666752f3db6bfdc",
-      ".lovable/meta.yaml": "5a2373b91d18ce168dfa059d91d7bfbf",
+      ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
       ".lovable/plan/kayene-design-system-starter-2026-09-23.md": "171824c7158790d94499e9e59ea4d931",
       ".lovable/plan/white-inputs-and-phosphor-icons-2026-09-23.md": "a86a56db2215a7a4032457924839b2af",
       ".lovable/sources.yaml": "8dc700ea5f754229276f98485d000e79",
