@@ -22,4 +22,4 @@ O Tailwind v4 usa um módulo nativo (`@tailwindcss/oxide`). Se o Windows bloquea
 $env:KDS_TAILWIND_BROWSER = "1"; npm run dev
 ```
 
-O build oficial (CI, Linux) usa o plugin normal do Vite.
+O build oficial (CI, Linux) usa o plugin normal do Vite. A cada push na `main`, a workflow `storybook.yml` publica o catálogo no GitHub Pages.
