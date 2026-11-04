@@ -6,9 +6,14 @@ on:
   push:
     branches: [main]
     paths: ['storybook/**', 'src/design-system/**']
+  workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -26,3 +31,22 @@ jobs:
           cache-dependency-path: storybook/package-lock.json
       - run: npm ci
       - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: storybook/storybook-static
+
+  deploy:
+    name: Publicar no GitHub Pages
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
