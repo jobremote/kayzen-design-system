@@ -1,0 +1,4 @@
+/* Tema oficial do Kayene (importa o Tailwind) e fontes de origem para o Tailwind varrer as classes usadas. */
+@import "../../src/design-system/kayene/styles/theme.css";
+@source "../../src/design-system";
+@source "../stories";

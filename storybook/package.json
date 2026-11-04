@@ -1,0 +1,32 @@
+{
+  "name": "kayene-storybook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6007",
+    "build": "storybook build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@fontsource/albert-sans": "^5.3.0",
+    "@fontsource/lora": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@storybook/addon-docs": "^9.1.21",
+    "@storybook/react-vite": "^9.1.21",
+    "@tailwindcss/browser": "^4.3.4",
+    "@tailwindcss/vite": "^4.3.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "clsx": "^2.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "storybook": "^9.1.21",
+    "storybook-addon-pseudo-states": "^9.1.21",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.7"
+  }
+}

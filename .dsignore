@@ -1,1 +1,3 @@
 src/showcase/**
+storybook/**
+.github/**

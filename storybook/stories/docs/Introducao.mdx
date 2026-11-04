@@ -1,0 +1,58 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { Doc, Hero, Stats, Principles, Hierarchy, H2, P, Code } from './blocks';
+
+<Meta title="Introdução" />
+
+<Unstyled>
+<Doc>
+
+<Hero eyebrow="Design system" title="Kayene">
+  Tokens, marca e componentes para experiências de bem-estar acolhedoras e precisas.
+</Hero>
+
+<Stats />
+
+<H2>Para que serve</H2>
+
+<P>
+  O Kayene reúne o que é preciso para construir experiências de cuidado com calma e clareza: uma
+  hierarquia de tokens precisa, componentes acessíveis e uma marca preservada. O tom é gentil e humano,
+  sem virar ornamento nem ficar visualmente vago.
+</P>
+
+<H2>Hierarquia de tokens</H2>
+
+<Hierarchy />
+
+<H2>Princípios</H2>
+
+<Principles
+  items={[
+    { title: 'Tokens, nunca valores soltos', text: 'Use utilitários semânticos como bg-primary, text-content e border-primary-border. Cores brutas não entram no código de produto.' },
+    { title: 'Erro em Lótus, não em vermelho', text: 'A família Lótus representa erro e validação. Nenhum vermelho genérico em feedback.' },
+    { title: 'Duas famílias tipográficas', text: 'Lora só para momentos expressivos de display. Albert Sans em controles, textos, rótulos, navegação e títulos.' },
+    { title: 'Formas por papel', text: 'Elementos pequenos e interativos usam pílula; campos usam control; cartões usam card; superfícies amplas usam surface.' },
+    { title: 'Elevação neumórfica em superfícies neutras', text: 'A sombra em relevo só vai sobre superfícies neutras, nunca sobre fundos de marca saturados.' },
+    { title: 'Acessível de origem', text: 'HTML semântico, controles alcançáveis pelo teclado, foco visível, rótulos claros e contraste suficiente. Ícones Phosphor (peso regular).' },
+  ]}
+/>
+
+<H2>Usar em um produto</H2>
+
+<P>Importe a interface pública e o tema uma única vez:</P>
+
+<Code>{`import "@/design-system/kayene/styles/theme.css";
+import { Button, TextInput } from "@/design-system/kayene";
+
+<form className="grid gap-4">
+  <TextInput label="Nome completo" name="name" />
+  <Button type="submit" variant="primary">Continuar</Button>
+</form>`}</Code>
+
+<P>
+  A variação visual vem das props documentadas (variant, size, status, state). Estenda um componente
+  existente antes de criar um quase igual.
+</P>
+
+</Doc>
+</Unstyled>

@@ -1,0 +1,24 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { Doc, H1, P, Code, BrandAssets } from './blocks';
+
+<Meta title="Fundamentos/Marca" />
+
+<Unstyled>
+<Doc>
+
+<H1>Marca</H1>
+
+<P>
+  O símbolo bicolor e o logotipo oficiais são arquivos preservados. Não recolora, não achate, não
+  redesenhe e não gere de novo. Use os componentes KayeneMark e KayeneLogo, que têm três tamanhos (sm, md, lg).
+</P>
+
+<BrandAssets />
+
+<Code>{`import { KayeneLogo, KayeneMark } from "@/design-system/kayene";
+
+<KayeneMark size="sm" />
+<KayeneLogo size="md" />`}</Code>
+
+</Doc>
+</Unstyled>
