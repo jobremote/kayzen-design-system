@@ -1,0 +1,28 @@
+name: Storybook
+
+on:
+  pull_request:
+    paths: ['storybook/**', 'src/design-system/**']
+  push:
+    branches: [main]
+    paths: ['storybook/**', 'src/design-system/**']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build do Storybook
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: storybook
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: storybook/package-lock.json
+      - run: npm ci
+      - run: npm run build

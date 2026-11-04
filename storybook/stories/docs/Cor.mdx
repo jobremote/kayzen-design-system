@@ -1,0 +1,25 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { Doc, H1, H2, P, Palettes, SemanticTokens } from './blocks';
+
+<Meta title="Fundamentos/Cor" />
+
+<Unstyled>
+<Doc>
+
+<H1>Cor</H1>
+
+<P>
+  Os tokens seguem uma hierarquia: primitivos alimentam semânticos, e os componentes só consomem os
+  semânticos. A paleta tem seis famílias, e o tema escuro redefine apenas os papéis de base (fundo,
+  superfície, conteúdo e borda). Use a barra de ferramentas (Tema) para alternar.
+</P>
+<P>Erro é representado de propósito pela família Lótus; não introduza vermelho genérico.</P>
+
+<H2>Semânticos</H2>
+<SemanticTokens />
+
+<H2>Primitivos</H2>
+<Palettes />
+
+</Doc>
+</Unstyled>
